@@ -7,6 +7,7 @@
     <title>Drive Moto</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -86,31 +87,127 @@
         </div>
       </div>
     </header>
-    <section class="banner-section">
+    <!-- Banner Section -->
+    <section class="banner-section page-section">
       <div class="container">
         <div class="banner-section__inner">
           <div class="banner-section__slider">
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
-            <div class="banner-section__slider-item">
-              <img src="images/hero/banner_slide.webp" alt="Promo" />
-            </div>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
+            <a class="banner-section__slider-item" href="#!">
+              <img
+                class="banner-section__slider-img"
+                src="images/hero/banner_slide.webp"
+                alt="Promo"
+              />
+            </a>
           </div>
-          <div class="banner-section__item sale-item">
-            <div class="sale-item__top"></div>
+          <a class="banner-section__item sale-item" href="#!">
+            <div class="sale-item__top">
+              <p class="sale-item__info">Акція</p>
+              <div class="sale-item__price">
+                <div class="price sale-item__price_new">
+                  79481.00 <span>&#8372;</span>
+                </div>
+                <div class="price sale-item__price_old">
+                  94540.00 <span>&#8372;</span>
+                </div>
+              </div>
+            </div>
+            <img
+              class="sale-item__img"
+              src="images/content/sale-1.webp"
+              alt="Product"
+            />
+            <h5 class="sale-item__title">Човновий двигун Сузукі DF9.9BRS</h5>
+            <div class="sale-item__footer">
+              Акція діє до
+              <span>31.08.2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--End Banner Section -->
+    <!-- Search Section -->
+    <section class="search page-section">
+      <div class="container">
+        <div class="search__inner">
+          <div class="search__tabs">
+            <a class="search__tabs-item" href="#tab-1">Пошук за номером</a
+            ><a class="search__tabs-item search__tabs-item_active" href="#tab-2"
+              >Пошук за маркою</a
+            ><a class="search__tabs-item" href="#tab-3"
+              >Пошук за назвою товару</a
+            >
+          </div>
+          <div class="search__content">
+            <div id="tab-1" class="search__content-item">
+              <form class="search__content-form">
+                <input
+                  class="search__content-input"
+                  type="text"
+                  placeholder="Введіть номер"
+                />
+                <button class="search__content-btn" type="submit">Пошук</button>
+              </form>
+            </div>
+            <div
+              id="tab-2"
+              class="search__content-item search__content-item_active"
+            >
+              <form class="search__content-form">
+                <input
+                  class="search__content-input"
+                  type="text"
+                  placeholder="Введіть марку"
+                />
+                <button class="search__content-btn" type="submit">Пошук</button>
+              </form>
+            </div>
+            <div id="tab-3" class="search__content-item">
+              <form class="search__content-form">
+                <input
+                  class="search__content-input"
+                  type="text"
+                  placeholder="Введіть назву товару"
+                />
+                <button class="search__content-btn" type="submit">Пошук</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
