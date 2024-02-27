@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  color: #2f3035;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-bottom: 80px;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+  font-family: "SFProDisplay-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.menu__item {
+  display: inline-block;
+}
+.menu__item + .menu__item {
+  padding-left: 50px;
+}
+
+.header__box {
+  display: flex;
+}
+.header__adress {
+  margin-right: 60px;
+  padding-left: 30px;
+  width: 265px;
+  position: relative;
+  cursor: pointer;
+}
+.header__adress::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background-image: url(../images/header/map.svg);
+  background-repeat: no-repeat;
+}
+.user-list {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.user-list__item {
+  padding-right: 10px;
+}
+.cart {
+  position: relative;
+}
+.cart__num {
+  position: absolute;
+  right: -14px;
+  bottom: -5px;
+  font-family: "SFProDisplay-Medium", sans-serif;
+  font-size: 10px;
+  line-height: 0.83;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1c62cd;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-categories {
+  padding: 15px 0 14px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f0f0f4;
+}
+
+.menu-categories__link {
+  padding: 15px 0 14px;
+  transition: width 0.3s ease-in-out;
+}
+.menu-categories__link:hover {
+  color: #000;
+}
+
+.menu-categories__link::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 0;
+  height: 3px;
+  bottom: -14px;
+  background: #1c62cd;
+  transition: width 0.3s;
+}
+.menu-categories__link:hover::after {
+  width: 100%;
+}
