@@ -29,7 +29,7 @@ body {
 }
 
 .page-section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 /* header */
@@ -678,4 +678,33 @@ body {
 }
 .footer__top-social {
   width: 250px;
+}
+
+/* ************************************* */
+/* CATALOG */
+
+.breadcrumbs {
+  padding-bottom: 40px;
+}
+.breadcrumbs__list {
+}
+.breadcrumbs__list-item {
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 4px;
+  position: relative;
+  color: var(--text-light);
+  font-size: 15px;
+}
+.breadcrumbs__list-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  width: 6px;
+  height: 9px;
+  background: url("../images/icons/arrow-right.svg");
+}
+.breadcrumbs__list-item:last-child::after {
+  display: none;
 }
