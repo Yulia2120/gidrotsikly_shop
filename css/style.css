@@ -2,6 +2,7 @@
   --text-main: #2f3035;
   --text-accent: #1c62cd;
   --text-gray: #656464;
+  --text-footer: #48494d;
   --text-light: #c4c4c4;
 
   --bg-light: #f0f0f4;
@@ -9,6 +10,7 @@
 
   --ff-main: "SFProDisplay-Regular", sans-serif;
   --ff-medium: "SFProDisplay-Medium", sans-serif;
+  --ff-semi: "SFProDisplay-Semibold", sans-serif;
   --ff-bold: "SFProDisplay-Bold", sans-serif;
   --ff-num: "Barlow", sans-serif;
 }
@@ -209,6 +211,7 @@ body {
   padding: 8px 20px;
   text-transform: uppercase;
   font-size: 12px;
+  font-family: var(--ff-bold);
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 10%;
@@ -222,6 +225,7 @@ body {
   font-family: var(--ff-num);
 }
 .sale-item__price_new {
+  font-family: var(--ff-bold);
   font-weight: 700;
   color: var(--text-accent);
   font-size: 27px;
@@ -229,7 +233,6 @@ body {
   margin-bottom: 7px;
 }
 .sale-item__price_old {
-  font-weight: 400;
   color: var(--text-light);
   font-size: 14px;
   line-height: 1.21;
@@ -252,6 +255,7 @@ body {
 .sale-item__title {
   margin-bottom: 7px;
   font-size: 18px;
+  font-family: var(--ff-bold);
   font-weight: 700;
   line-height: 1.667;
   text-align: center;
@@ -260,7 +264,6 @@ body {
   background-color: var(--bg-light);
   padding: 25px 20px;
   font-size: 18px;
-  font-weight: 400;
   line-height: 1.17;
   text-align: center;
 }
@@ -286,6 +289,7 @@ body {
 .search__tabs-item.tab_active {
   border-radius: 5px;
   background-color: var(--bg-light);
+  font-family: var(--ff-bold);
   font-weight: 700;
 }
 
@@ -314,6 +318,7 @@ body {
   margin-left: -3px;
   color: #fff;
   font-size: 14px;
+  font-family: var(--ff-bold);
   font-weight: 700;
   line-height: 1.21;
   letter-spacing: 12%;
@@ -406,6 +411,7 @@ body {
 .products__tab {
   padding-bottom: 10px;
   font-size: 15px;
+  font-family: var(--ff-medium);
   font-weight: 500;
   text-align: center;
   text-transform: lowercase;
@@ -414,6 +420,7 @@ body {
 .products__tab.tab_active {
   border-bottom: 2px solid var(--text-accent);
 }
+
 .product-slider {
   opacity: 0;
   visibility: hidden;
@@ -424,7 +431,7 @@ body {
 }
 .product-item {
   min-width: 271px;
-  min-height: 400px;
+  min-height: 420px;
   padding: 52px 20px 31px;
   text-align: center;
   border: 1px solid var(--bg-light);
@@ -435,7 +442,7 @@ body {
 }
 .product-item__notify-text {
   display: none;
-  font-weight: 700;
+  font-family: var(--ff-bold);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.16;
@@ -581,4 +588,96 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: var(--bg-light);
+}
+
+/* banner */
+.banner {
+  margin-bottom: 80px;
+}
+
+/* footer */
+.footer {
+  background-color: var(--bg-light);
+}
+
+.footer__top {
+  padding-top: 43px;
+}
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top-item {
+  width: 200px;
+}
+.footer__top-newslatter.footer__top-item {
+  width: 295px;
+  margin-right: 75px;
+}
+
+.footer__top-title {
+  font-size: 14px;
+  font-family: var(--ff-bold);
+  font-weight: 700;
+  line-height: 1, 21;
+}
+.footer-form {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-form__input {
+  width: 100%;
+  padding: 0 12px;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  line-height: 1.21;
+  outline: var(--text-accent);
+}
+
+.footer-form__input::placeholder {
+  color: var(--text-light);
+}
+
+.footer-form__btn {
+  text-transform: uppercase;
+  background-color: var(--text-accent);
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  font-family: var(--ff-semi);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 12%;
+  text-align: center;
+}
+.footer-list {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-list__item {
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+.social-list__item {
+}
+.footer__bottom {
+  padding: 46px 0 22px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.footer__bottom-link {
+  color: var(--text-footer);
+  font-size: 10px;
+  line-height: 12px;
+}
+.footer__top-social {
+  width: 250px;
 }
