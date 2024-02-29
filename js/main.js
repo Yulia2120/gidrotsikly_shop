@@ -1,5 +1,23 @@
+// $(function () {
+//   $(".banner-section__slider").slick({
+//     dots: true,
+//     prevArrow:
+//       '<button class="banner-section__slider-btn banner-section__slider-btn_prev"><img src="images/slider/left.svg" alt="arrow left" /></button>',
+//     nextArrow:
+//       '<button class="banner-section__slider-btn banner-section__slider-btn_next"><img src="images/slider/right.svg" alt="arrow right" /></button>',
+//   });
+
 $(function () {
-  $(".banner-section__slider").slick({
+  const mainSlider = $(".banner-section__slider");
+
+  mainSlider.on("init", function (slick) {
+    mainSlider.css({
+      opacity: 1,
+      visibility: "visible",
+    });
+  });
+
+  mainSlider.slick({
     dots: true,
     prevArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btn_prev"><img src="images/slider/left.svg" alt="arrow left" /></button>',
@@ -23,12 +41,32 @@ $(function () {
     $(this).toggleClass("product-item__favorite_active");
   });
 
-  $(".product-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow:
-      '<button class="product-slider__slider-btn product-slider__slider-btn_prev"><img src="images/icons/arrow-prev.svg" alt="arrow prev" /></button>',
-    nextArrow:
-      '<button class="product-slider__slider-btn product-slider__slider-btn_next"><img src="images/icons/arrow-next.svg" alt="arrow next" /></button>',
+  $(function () {
+    const productSlider = $(".product-slider");
+
+    productSlider.on("init", function (slick) {
+      productSlider.css({
+        opacity: 1,
+        visibility: "visible",
+      });
+    });
+
+    productSlider.slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow:
+        '<button class="product-slider__slider-btn product-slider__slider-btn_prev"><img src="images/icons/arrow-prev.svg" alt="arrow prev" /></button>',
+      nextArrow:
+        '<button class="product-slider__slider-btn product-slider__slider-btn_next"><img src="images/icons/arrow-next.svg" alt="arrow next" /></button>',
+    });
+
+    // $(".product-slider").slick({
+    //   slidesToShow: 4,
+    //   slidesToScroll: 1,
+    //   prevArrow:
+    //     '<button class="product-slider__slider-btn product-slider__slider-btn_prev"><img src="images/icons/arrow-prev.svg" alt="arrow prev" /></button>',
+    //   nextArrow:
+    //     '<button class="product-slider__slider-btn product-slider__slider-btn_next"><img src="images/icons/arrow-next.svg" alt="arrow next" /></button>',
+    // });
   });
 });

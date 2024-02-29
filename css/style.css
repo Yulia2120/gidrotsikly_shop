@@ -140,6 +140,8 @@ body {
 }
 .banner-section__slider {
   max-width: 870px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .banner-section__slider-img {
@@ -183,7 +185,7 @@ body {
   border-radius: 50%;
 }
 
-.slick-active li button {
+.slick-dots li.slick-active button {
   background-color: #fff;
 }
 
@@ -412,7 +414,10 @@ body {
 .products__tab.tab_active {
   border-bottom: 2px solid var(--text-accent);
 }
-
+.product-slider {
+  opacity: 0;
+  visibility: hidden;
+}
 .product-item__wrapper {
   position: relative;
   width: 271px;
