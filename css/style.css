@@ -657,16 +657,14 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
-.footer-list__item {
-}
+
 .social-list {
   display: flex;
   align-items: center;
   gap: 30px;
   height: 100%;
 }
-.social-list__item {
-}
+
 .footer__bottom {
   padding: 46px 0 22px;
   display: flex;
