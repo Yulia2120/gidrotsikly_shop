@@ -7,13 +7,26 @@ $(function () {
       '<button class="banner-section__slider-btn banner-section__slider-btn_next"><img src="images/slider/right.svg" alt="arrow right" /></button>',
   });
 
-  $(".search__tabs-item").on("click", function (e) {
+  $(".tab").on("click", function (e) {
     e.preventDefault();
 
-    $(".search__tabs-item").removeClass("search__tabs-item_active");
-    $(".search__content-item").removeClass("search__content-item_active");
+    $(".tab").removeClass("tab_active");
+    $(".tabs-content").removeClass("tabs-content_active");
 
-    $(this).addClass("search__tabs-item_active");
-    $($(this).attr("href")).addClass("search__content-item_active");
+    $(this).addClass("tab_active");
+    $($(this).attr("href")).addClass("tabs-content_active");
+  });
+
+  $(".product-item__favorite").on("click", function () {
+    $(this).toggleClass("product-item__favorite_active");
+  });
+
+  $(".product-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btn_prev"><img src="images/icons/arrow-prev.svg" alt="arrow prev" /></button>',
+    nextArrow:
+      '<button class="product-slider__slider-btn product-slider__slider-btn_next"><img src="images/icons/arrow-next.svg" alt="arrow next" /></button>',
   });
 });

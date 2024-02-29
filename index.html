@@ -37,17 +37,17 @@
               <ul class="user-list">
                 <li class="user-list__item">
                   <a href="#!" class="user-list__link">
-                    <img src="images/header/heart.svg" alt="Heart" />
+                    <img src="images/icons/heart.svg" alt="Heart" />
                   </a>
                 </li>
                 <li class="user-list__item">
                   <a href="#!" class="user-list__link">
-                    <img src="images/header/user.svg" alt="User" />
+                    <img src="images/icons/user.svg" alt="User" />
                   </a>
                 </li>
                 <li class="user-list__item">
                   <a href="#!" class="user-list__link cart">
-                    <img src="images/header/cart.svg" alt="Cart" />
+                    <img src="images/icons/cart.svg" alt="Cart" />
                     <div class="cart__num">1</div>
                   </a>
                 </li>
@@ -167,15 +167,15 @@
       <div class="container">
         <div class="search__inner">
           <div class="search__tabs">
-            <a class="search__tabs-item" href="#tab-1">Пошук за номером</a
-            ><a class="search__tabs-item search__tabs-item_active" href="#tab-2"
+            <a class="tab search__tabs-item" href="#tab-1">Пошук за номером</a
+            ><a class="tab search__tabs-item tab_active" href="#tab-2"
               >Пошук за маркою</a
-            ><a class="search__tabs-item" href="#tab-3"
+            ><a class="tab search__tabs-item" href="#tab-3"
               >Пошук за назвою товару</a
             >
           </div>
           <div class="search__content">
-            <div id="tab-1" class="search__content-item">
+            <div id="tab-1" class="tabs-content search__content-item">
               <form class="search__content-form">
                 <input
                   class="search__content-input"
@@ -187,7 +187,7 @@
             </div>
             <div
               id="tab-2"
-              class="search__content-item search__content-item_active"
+              class="tabs-content search__content-item tabs-content_active"
             >
               <form class="search__content-form">
                 <input
@@ -198,7 +198,7 @@
                 <button class="search__content-btn" type="submit">Пошук</button>
               </form>
             </div>
-            <div id="tab-3" class="search__content-item">
+            <div id="tab-3" class="tabs-content search__content-item">
               <form class="search__content-form">
                 <input
                   class="search__content-input"
@@ -274,8 +274,426 @@
       </div>
     </section>
     <!-- End Categories Section -->
+    <!-- Product Section -->
+    <section class="products page-section">
+      <div class="container">
+        <div class="products__inner">
+          <h3 class="product__title">Популярні товари</h3>
+          <div class="tabs-wrapper">
+            <div class="tabs products__tabs">
+              <a class="tab products__tab tab_active" href="#product-tab-1"
+                >Запчастини</a
+              >
+              <a class="tab products__tab" href="#product-tab-2">Двигуни</a>
+              <a class="tab products__tab" href="#product-tab-3">шини</a>
+              <a class="tab products__tab" href="#product-tab-4">електроніка</a>
+              <a class="tab products__tab" href="#product-tab-5">інструменти</a>
+              <a class="tab products__tab" href="#product-tab-6">аксесуари</a>
+            </div>
+            <div class="tabs-container products__container">
+              <div
+                id="product-tab-1"
+                class="tabs-content products__content tabs-content_active"
+              >
+                <div class="product-slider">
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/2.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Рятувальний жилет BRP Men's Airflow PFD
+                        </h4>
+                        <p class="price product-item__price">
+                          2867 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/3.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          BRP Audio-Premium System
+                        </h4>
+                        <p class="price product-item__price">
+                          28261 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div
+                      class="product-item__wrapper product-item__not-available"
+                    >
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/4.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">Рятівне спорядження</h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="product-tab-2" class="tabs-content products__content">
+                <div class="product-slider">
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/2.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Рятувальний жилет BRP Men's Airflow PFD
+                        </h4>
+                        <p class="price product-item__price">
+                          2867 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/3.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          BRP Audio-Premium System
+                        </h4>
+                        <p class="price product-item__price">
+                          28261 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div
+                      class="product-item__wrapper product-item__not-available"
+                    >
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/4.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">Рятівне спорядження</h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="product-slider__item">
+                    <div class="product-item__wrapper">
+                      <button class="product-item__favorite"></button>
+                      <button class="product-item__cart">
+                        <img src="images/icons/cart-white.svg" alt="Cart" />
+                      </button>
+                      <a href="#!" class="product-item__notify-link"
+                        ><span>Повідомити про надходження</span></a
+                      >
+                      <a class="product-item product-item_sale" href="#!">
+                        <p class="product-item__hover-text">
+                          переглянути товар
+                        </p>
+                        <img
+                          src="images/product/1.png"
+                          alt=""
+                          class="product-item__img"
+                        />
+                        <h4 class="product-item__title">
+                          Водонепроникний Рюкзак
+                        </h4>
+                        <p class="price product-item__price">
+                          4073 <span>&#8372;</span>
+                        </p>
+                        <p class="product-item__notify-text">
+                          немає в наявності
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="product-tab-3" class="tabs-content products__content">
+                SLIDER-3
+              </div>
+              <div id="product-tab-4" class="tabs-content products__content">
+                SLIDER-4
+              </div>
+              <div id="product-tab-5" class="tabs-content products__content">
+                SLIDER-5
+              </div>
+              <div id="product-tab-6" class="tabs-content products__content">
+                SLIDER-6
+              </div>
+            </div>
+          </div>
+          <div class="product__more">
+            <a class="product__more-link" href="#!">Показати ще</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Product Section -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+
+<!-- <div class="tabs-wrapper">
+            <div class="tabs">
+              <a class="tab tab_active" href="#!"></a>
+            </div>
+            <div class="tabs-container">
+              <div class="tabs-content"></div>
+            </div>
+          </div> -->
