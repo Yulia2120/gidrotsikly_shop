@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -285,11 +289,21 @@
         <div class="catalog__inner">
           <aside class="catalog__inner-aside aside-filter">
             <div class="tabs-wrapper">
-              <div class="tabs">
-                <a class="tab tab_active" href="#!"></a>
+              <div class="tabs aside-filter__tabs">
+                <a class="tab aside-filter__tab tab_active" href="#!"
+                  ><span>Параметри</span></a
+                >
+                <a class="tab aside-filter__tab" href="#!"
+                  ><span>по марці</span></a
+                >
               </div>
               <div class="tabs-container">
-                <div class="tabs-content"></div>
+                <div
+                  class="tabs-content aside-filter__tabs-content tabs-content_active"
+                ></div>
+                <div class="tabs-content aside-filter__tabs-content">
+                  content-2
+                </div>
               </div>
             </div>
           </aside>
@@ -674,6 +688,9 @@
     <!-- End Footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

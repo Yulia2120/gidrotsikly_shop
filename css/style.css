@@ -799,3 +799,31 @@ body {
 .pagination-list__item a {
   display: block;
 }
+
+/* aside-filter */
+
+.aside-filter__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-filter__tab {
+  width: 50%;
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1875;
+  letter-spacing: 9%;
+  text-transform: uppercase;
+}
+.aside-filter__tab.tab_active {
+  color: var(--ff-main);
+  font-family: var(--ff-bold);
+  font-weight: 700;
+}
+
+.aside-filter__tab.tab_active span {
+  display: inline-block;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--text-accent);
+}
