@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
     <link rel="stylesheet" href="css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" href="css/jquery.formstyler.css" />
-    <link rel="stylesheet" href="css/jquery.formstyler.theme.css.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -112,7 +112,7 @@
             <button>ще</button>
           </div>
           <div class="catalog__filter-btn">
-            <select>
+            <select class="filter-style">
               <option value=""></option>
               <option value=""></option>
               <option value=""></option>
@@ -300,7 +300,99 @@
               <div class="tabs-container">
                 <div
                   class="tabs-content aside-filter__tabs-content tabs-content_active"
-                ></div>
+                >
+                  <form class="aside-filter__form">
+                    <ul class="aside-filter__list">
+                      <li class="aside-filter__item-drop">
+                        <p
+                          class="aside-filter__item-title filter__item-drop filter__item-drop_active"
+                        >
+                          Наявність
+                        </p>
+                        <div class="aside-filter__content">
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" />
+                              В наявності</label
+                            >
+                          </div>
+
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input class="filter-style" type="checkbox" />
+                              Під замовлення</label
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop">
+                        <p
+                          class="aside-filter__item-title filter__item-drop filter__item-drop_active"
+                        >
+                          Новинки
+                        </p>
+                        <div
+                          class="aside-filter__content aside-filter__content-radio"
+                        >
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input
+                                class="filter-style"
+                                name="radio"
+                                type="radio"
+                              />
+                              Усе</label
+                            >
+                          </div>
+
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input
+                                class="filter-style"
+                                name="radio"
+                                type="radio"
+                              />
+                              Новинки</label
+                            >
+                          </div>
+                          <div class="aside-filter__content-box">
+                            <label class="aside-filter__content-label">
+                              <input
+                                class="filter-style"
+                                name="radio"
+                                type="radio"
+                              />
+                              Акції</label
+                            >
+                          </div>
+                        </div>
+                      </li>
+                      <li class="aside-filter__item-drop">
+                        <p
+                          class="aside-filter__item-title filter__item-drop filter__item-drop_active"
+                        >
+                          Ціна
+                        </p>
+                        <div class="aside-filter__content">
+                          <input
+                            type="text"
+                            class="js-range-slider"
+                            name="my_range"
+                            value=""
+                            data-type="double"
+                            data-min="100000"
+                            data-max="500000"
+                            data-from="150000"
+                            data-to="275000"
+                            data-grid="false"
+                          />
+                        </div>
+                      </li>
+
+                      <li class="aside-filter__item-list"></li>
+                    </ul>
+                  </form>
+                </div>
                 <div class="tabs-content aside-filter__tabs-content">
                   content-2
                 </div>
