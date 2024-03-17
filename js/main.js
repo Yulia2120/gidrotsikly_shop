@@ -15,6 +15,14 @@ $(function () {
       '<button class="banner-section__slider-btn banner-section__slider-btn_prev"><img src="images/slider/left.svg" alt="arrow left" /></button>',
     nextArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btn_next"><img src="images/slider/right.svg" alt="arrow right" /></button>',
+    responsive: [
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   //tabs
@@ -84,5 +92,10 @@ $(function () {
     ratedFill: "#1C62CD",
     normalFill: "#c4c4c4",
     spacing: "7px",
+  });
+
+  //mobile-menu
+  $(".menu__btn").on("click", function () {
+    $(".menu-mobile__list").toggleClass("menu-mobile__list_active");
   });
 });

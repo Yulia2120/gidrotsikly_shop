@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/jquery.formstyler.css" />
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -21,6 +22,11 @@
         <div class="container">
           <div class="header__top-inner">
             <nav class="menu">
+              <button class="menu__btn">
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+              </button>
               <ul class="menu__list">
                 <li class="menu__item">
                   <a href="" class="menu__link">Магазини</a>
@@ -60,6 +66,134 @@
           </div>
         </div>
       </div>
+      <!-- Mobile menu -->
+      <ul class="menu-mobile__list">
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/user.svg"
+              alt="user"
+            />
+            <p>Увійти</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/user.svg"
+              alt="user"
+            />
+            <p>Реєстрація</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/heart.svg"
+              alt="heart"
+            />
+            <p>Вибране</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/cart.svg"
+              alt="cart"
+            />
+            <p>Кошик</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/house.svg"
+              alt="house"
+            />
+            <p>Магазини</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/percent.svg"
+              alt="percent"
+            />
+            <p>Акції</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <img
+              class="menu-mobile__img"
+              src="images/icons/payment.svg"
+              alt="payment"
+            />
+            <p>Доставка і оплата</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Квадроцикли</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Катери</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Гідроцикли</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Човни</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Всюдиходи</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Снігоходи</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Двигуни</p>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#!">
+            <p>Запчастини</p>
+          </a>
+        </li>
+      </ul>
+      <div class="menu__mobile-linewrapper">
+        <ul class="menu__mobile-line">
+          <li class="menu__item">
+            <a class="menu__link" href="#!"> Магазини </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#!"> Акції </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#!"> Доставка і оплата </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- End Mobile menu -->
       <div class="header__bottom">
         <div class="container">
           <ul class="menu-categories">
@@ -93,6 +227,7 @@
         </div>
       </div>
     </header>
+
     <!-- Banner Section -->
     <section class="banner-section page-section">
       <div class="container">
@@ -169,7 +304,7 @@
     </section>
     <!--End Banner Section -->
     <!-- Search Section -->
-    <section class="search page-section">
+    <!-- <section class="search page-section">
       <div class="container">
         <div class="search__inner">
           <div class="search__tabs">
@@ -217,9 +352,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Categories Section -->
-    <section class="categories page-section">
+    <!-- <section class="categories page-section">
       <div class="container">
         <div class="categories__inner">
           <a href="#!" class="categories__item">
@@ -278,10 +413,10 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Categories Section -->
     <!-- Product Section -->
-    <section class="products page-section">
+    <!-- <section class="products page-section">
       <div class="container">
         <div class="products__inner">
           <h3 class="product__title">Популярні товари</h3>
@@ -687,19 +822,19 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--End Product Section -->
     <!-- Banner -->
-    <div class="banner">
+    <!-- <div class="banner">
       <div class="container">
         <a href="#!" class="banner__link">
           <img src="images/content/баннер.jpg" alt="Sale banner" />
         </a>
       </div>
-    </div>
+    </div> -->
     <!-- End Banner -->
     <!--Section Product-buy -->
-    <section class="products page-section">
+    <!-- <section class="products page-section">
       <div class="container">
         <div class="products__inner">
           <h3 class="product__title">З цим товаром купують</h3>
@@ -1106,10 +1241,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--End Section Product-buy -->
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__top">
           <div class="footer__top-inner">
@@ -1179,8 +1314,9 @@
           >
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- End Footer -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/ion.rangeSlider.min.js"></script>
