@@ -15,14 +15,6 @@ $(function () {
       '<button class="banner-section__slider-btn banner-section__slider-btn_prev"><img src="images/slider/left.svg" alt="arrow left" /></button>',
     nextArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btn_next"><img src="images/slider/right.svg" alt="arrow right" /></button>',
-    responsive: [
-      {
-        breakpoint: 969,
-        settings: {
-          arrows: false,
-        },
-      },
-    ],
   });
 
   //tabs
@@ -60,6 +52,38 @@ $(function () {
         '<button class="product-slider__slider-btn product-slider__slider-btn_prev"><img src="images/icons/arrow-prev.svg" alt="arrow prev" /></button>',
       nextArrow:
         '<button class="product-slider__slider-btn product-slider__slider-btn_next"><img src="images/icons/arrow-next.svg" alt="arrow next" /></button>',
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            arrows: false,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 870,
+          settings: {
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            dots: true,
+          },
+        },
+      ],
     });
   });
 
@@ -97,5 +121,16 @@ $(function () {
   //mobile-menu
   $(".menu__btn").on("click", function () {
     $(".menu-mobile__list").toggleClass("menu-mobile__list_active");
+  });
+
+  //aside-btn filter
+  $(".aside__btn").on("click", function () {
+    $(this).next().slideToggle();
+  });
+
+  //mobile-footer
+  $(".footer__topdrop").on("click", function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass("footer__topdrop_active");
   });
 });

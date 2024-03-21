@@ -460,7 +460,18 @@ body {
 .product-slider {
   opacity: 0;
   visibility: hidden;
+
+  .slick-dots {
+    bottom: -30px;
+  }
+  .slick-dots button {
+    background-color: var(--text-light);
+  }
+  .slick-dots .slick-active button {
+    background-color: var(--text-accent);
+  }
 }
+
 .product-item__wrapper {
   position: relative;
   width: 271px;
@@ -670,7 +681,7 @@ body {
   font-size: 14px;
   font-family: var(--ff-bold);
   font-weight: 700;
-  line-height: 1, 21;
+  line-height: 1.21;
 }
 .footer-form {
   margin-top: 34px;
@@ -865,6 +876,10 @@ body {
 }
 
 /* aside-filter */
+
+.aside__btn {
+  display: none;
+}
 
 .aside-filter__tabs {
   display: flex;
