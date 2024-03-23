@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   // slick-index
   const mainSlider = $(".banner-section__slider");
 
@@ -22,7 +22,7 @@ $(function () {
     e.preventDefault();
 
     $($(this).siblings()).removeClass("tab_active");
-    $($(this).parent().siblings().find("div")).removeClass(
+    $($(this).closest(".tabs-wrapper").siblings().find("div")).removeClass(
       "tabs-content_active"
     );
 
@@ -84,6 +84,10 @@ $(function () {
           },
         },
       ],
+    });
+    // При смене таба  slick("setPosition")
+    $(".tabs").on("click", ".tab", function () {
+      productSlider.slick("setPosition");
     });
   });
 
